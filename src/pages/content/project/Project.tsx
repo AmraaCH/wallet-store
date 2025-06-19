@@ -16,19 +16,23 @@ const ProjectWrapper = tw.section`
   max-lg:justify-center
 `;
 
-function Projects() {
+function Project({ selectedCategory }: { selectedCategory: string }) {
+  const filteredProjects =
+    selectedCategory === 'All'
+      ? projectData
+      : projectData.filter((project) =>
+          project.category.includes(selectedCategory)
+        );
+
   return (
     <ProjectWrapper>
-      {projectData.map((item) => (
-        <ProjectCard
-          key={item.id}
-          name={item.name}
-          price={item.price}
-          imgurl={item.imgurl}
-        />
+    <div className="w-full flex flex-wrap justify-between gap-10">
+      {filteredProjects.map((item, index) => (
+        <ProjectCard key={index} {...item} />
       ))}
+    </div>
     </ProjectWrapper>
   );
 }
 
-export default Projects;
+export default Project;

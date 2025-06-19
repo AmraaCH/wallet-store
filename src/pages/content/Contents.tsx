@@ -1,5 +1,6 @@
 // src/pages/content/Contents.tsx
 
+import { useState } from 'react';
 import tw from 'tailwind-styled-components';
 import Project from '../content/project/Project';
 import FooterMenu from '../content/project/FooterMenu';
@@ -12,63 +13,59 @@ const Container = tw.section`
   flex-col
   items-center
   p-10
-  gap-12
+  gap-14
   z-1
 `;
 
 const Title = tw.h2`
-  text-5xl
+  text-7xl
   text-center
   text-black
 `;
 
-const Menu = tw.ul`
+const MenuList = tw.ul`
   flex
-  justify-center
-  gap-20
-  mb-2 
+  gap-6
   text-black
   text-sm
   font-medium
   tracking-widest
   uppercase
+  justify-center
 `;
 
-const RightWrap = tw.section`
-  flex
-  flex-col
-  w-full
-  pb-20
-  gap-10
-  pt-0   
-  mt-0 
+const MenuItem = tw.li<{ $active?: boolean }>`
+  cursor-pointer
+  hover:underline
+  ${(p) => (p.$active ? 'font-bold underline' : '')}
 `;
 
 const ContentWrapper = tw.div`
   w-full
   flex
   flex-col
-  gap-1  // 메뉴와 프로젝트 카드 사이 간격 직접 조절
+  gap-20
+  pb-20
 `;
 
 function Contents() {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
   return (
     <Container>
       <Title>Products</Title>
+
+      <MenuList>
+        <MenuItem $active={selectedCategory === 'All'} onClick={() => setSelectedCategory('All')}>All</MenuItem>
+        <MenuItem $active={selectedCategory === '25F/W'} onClick={() => setSelectedCategory('25F/W')}>25F/W</MenuItem>
+        <MenuItem $active={selectedCategory === '세나'} onClick={() => setSelectedCategory('세나')}>세나</MenuItem>
+        <MenuItem $active={selectedCategory === '조혜원'} onClick={() => setSelectedCategory('조혜원')}>조혜원</MenuItem>
+        <MenuItem $active={selectedCategory === '김주하'} onClick={() => setSelectedCategory('김주하')}>김주하</MenuItem>
+      </MenuList>
+
       <ContentWrapper>
-
-      {/* ✅ 중앙 정렬된 메뉴 */}
-      <Menu>
-        <li>25F/W</li>
-        <li>세나</li>
-        <li>조혜원</li>
-        <li>김주하</li>
-      </Menu>
-
-      <RightWrap>
-        <Project />
+        <Project selectedCategory={selectedCategory} />
         <FooterMenu />
-      </RightWrap>
       </ContentWrapper>
     </Container>
   );

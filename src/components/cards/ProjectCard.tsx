@@ -1,5 +1,5 @@
+import { useNavigate } from 'react-router-dom';
 import tw from 'tailwind-styled-components';
-import useModal from '../../hooks/useModal';
 
 type Props = {
   name: string;
@@ -10,7 +10,7 @@ type Props = {
 const Card = tw.div`
   w-[22%]
   h-[370px]
-  bg-[#dbd7d1]             // ✅ 기본 아이보리색
+  bg-ivory-100
   rounded
   shadow-md
   overflow-hidden
@@ -19,58 +19,24 @@ const Card = tw.div`
   hover:scale-[1.02]
   flex
   flex-col
-  justify-between          // ✅ 내용 아래로 밀기
-
-  max-lg:w-[45%]
-  max-md:w-full
-`;
-
-const ImgWrapper = tw.div`
-  w-full
-  h-[220px]
-  overflow-hidden
-`;
-
-const Img = tw.img`
-  w-full
-  h-full
-  object-contain
-`;
-
-const Info = tw.div`
-  p-4
-  text-left               // ✅ 왼쪽 정렬
-`;
-
-const Name = tw.h3`
-  text-sm
-  font-medium
-  text-gray-700
-`;
-
-const Price = tw.p`
-  mt-1
-  text-xs
-  text-mint-600
-  font-normal
+  justify-between
+  cursor-pointer
 `;
 
 function ProjectCard({ name, price, imgurl }: Props) {
-  const { openModal } = useModal();
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    openModal(name);
+    navigate(`/product/${name}`);
   };
 
   return (
     <Card onClick={handleClick}>
-      <ImgWrapper>
-        <Img src={imgurl} alt={name} />
-      </ImgWrapper>
-      <Info>
-        <Name>{name}</Name>
-        <Price>{price}</Price>
-      </Info>
+      <img src={imgurl} alt={name} className="w-full h-56 object-contain" />
+      <div className="p-3">
+        <h3 className="text-left text-sm font-semibold">{name}</h3>
+        <p className="text-left text-xs text-green-600 mt-1">{price}</p>
+      </div>
     </Card>
   );
 }

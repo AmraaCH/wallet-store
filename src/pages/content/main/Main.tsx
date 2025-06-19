@@ -13,13 +13,15 @@ import { MainComponent } from './Main.styled';
 import MainBackground from '../../../components/atoms/background/MainBackground';
 import { Menu, X } from 'lucide-react'; // 햄버거/닫기 아이콘
 
+import { useNavigate } from 'react-router-dom';
+
 function Main() {
   const { pathname } = useLocation();
   const vhRef = useRef(0);
   const mainRef = useRef<HTMLDivElement>(null);
   const isPosition = useSelector((state: RootState) => state.position.isPosition);
   const ismobile = isMobile ? 'true' : 'false';
-
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -55,10 +57,22 @@ function Main() {
         {menuOpen && (
           <div className="absolute top-16 right-10 z-10 bg-white border border-gray-300 shadow-lg rounded px-6 py-4">
             <ul className="flex flex-col gap-3 text-black text-sm font-medium tracking-widest uppercase">
-              <li>25F/W</li>
-              <li>세나</li>
-              <li>조혜원</li>
-              <li>김주하</li>
+              <li onClick={() => navigate('/25fw')}
+                className="cursor-pointer hover:text-gray-500 transition-colors duration-200">
+                  25F/W
+              </li>
+              <li onClick={() => navigate('/Sena')}
+                className="cursor-pointer hover:text-gray-500 transition-colors duration-200">
+                  세나
+              </li>
+              <li onClick={() => navigate('/Hyewon')}
+                className="cursor-pointer hover:text-gray-500 transition-colors duration-200">
+                  조혜원
+              </li>
+              <li onClick={() => navigate('/Jooha')}
+                className="cursor-pointer hover:text-gray-500 transition-colors duration-200">
+                  김주하
+              </li>
             </ul>
           </div>
         )}
