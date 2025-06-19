@@ -1,44 +1,75 @@
-import tw from 'tailwind-styled-components';
-import Nav from '../../components/nav/Nav';
-import ProductList from '../content/project/Project'; // ❗️Project가 제품 목록 컴포넌트라면 이름만 바꾸면 됩니다.
-import useScrollToTarget from '../../hooks/useScrollToTarget';
+// src/pages/content/Contents.tsx
 
-export const Container = tw.section`
+import tw from 'tailwind-styled-components';
+import Project from '../content/project/Project';
+import FooterMenu from '../content/project/FooterMenu';
+
+const Container = tw.section`
   relative
-  bg-mainBlack
+  bg-white
   w-full
   flex
+  flex-col
+  items-center
   p-10
-  gap-14
+  gap-12
   z-1
-  
-  max-md:flex-col
-  max-md:gap-0
-  max-ls:gap-5
-  max-xl:gap-10
 `;
 
-export const RightWrap = tw.section`
+const Title = tw.h2`
+  text-5xl
+  text-center
+  text-black
+`;
+
+const Menu = tw.ul`
+  flex
+  justify-center
+  gap-20
+  mb-2 
+  text-black
+  text-sm
+  font-medium
+  tracking-widest
+  uppercase
+`;
+
+const RightWrap = tw.section`
   flex
   flex-col
-  flex-2
-  gap-20
+  w-full
   pb-20
+  gap-10
+  pt-0   
+  mt-0 
+`;
+
+const ContentWrapper = tw.div`
+  w-full
+  flex
+  flex-col
+  gap-1  // 메뉴와 프로젝트 카드 사이 간격 직접 조절
 `;
 
 function Contents() {
-  const navTabs = [
-    useScrollToTarget(''),          // 필요 없는 탭
-    useScrollToTarget('Products'), // 제품 섹션
-    useScrollToTarget(''),          // 필요 없는 탭
-  ];
-
   return (
     <Container>
-      <Nav navTabs={navTabs} />
+      <Title>Products</Title>
+      <ContentWrapper>
+
+      {/* ✅ 중앙 정렬된 메뉴 */}
+      <Menu>
+        <li>25F/W</li>
+        <li>세나</li>
+        <li>조혜원</li>
+        <li>김주하</li>
+      </Menu>
+
       <RightWrap>
-        <ProductList id="Products" navTabs={navTabs} />
+        <Project />
+        <FooterMenu />
       </RightWrap>
+      </ContentWrapper>
     </Container>
   );
 }

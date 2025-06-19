@@ -41,7 +41,8 @@ export type ProjectDetailDataT = {
   name: string;
   price: string;
   imgurl: string;
-  desc? : string;
+  desc?: string;
+  subtext?: string
 };
 
 

@@ -22,8 +22,8 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterTxt>
-        Copyright 2025. 액세사리 창업 조별활동으로 제작한 사이트입니다.<br />
-        5781668 조혜원 / 5781407 김주하 / 5618829 세나
+        Copyright 2025. 액세사리 창업 수업 조별활동으로 제작한 사이트입니다.<br />
+        5781668 조혜원 / 5781407 김주하 / 5618829 세나 <br />
       </FooterTxt>
     </FooterContainer>
   );

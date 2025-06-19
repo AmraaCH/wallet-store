@@ -52,7 +52,7 @@ function ProjectImgCard({ name, price, imgurl }: Props) {
       <Img src={imgurl} alt={name} />
       <Label>
         <Name>{name}</Name>
-        <Price>{price}₮</Price>
+        <Price>{price}</Price>
       </Label>
     </ImgCard>
   );

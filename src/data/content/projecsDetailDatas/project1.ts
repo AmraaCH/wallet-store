@@ -1,6 +1,7 @@
 export const project1 = {
-  id: 'goguma',
-  name: 'goguma Wallet Silver',
+  id: '1',
+  name: 'Wallet',
   price: '₩45,000',
-  imgurl: '/assets/wallet/wallet1.jpg',
-};
+  imgurl: 'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/wallet1.png'
+}
+
