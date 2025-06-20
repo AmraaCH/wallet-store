@@ -34,8 +34,8 @@ function ProjectCard({ name, price, imgurl }: Props) {
     <Card onClick={handleClick}>
       <img src={imgurl} alt={name} className="w-full h-56 object-contain" />
       <div className="p-3">
-        <h3 className="text-left text-sm font-semibold">{name}</h3>
-        <p className="text-left text-xs text-green-600 mt-1">{price}</p>
+        <h3 className="text-left text-sm ">{name}</h3>
+        <p className="text-left text-sm ">{price}</p>
       </div>
     </Card>
   );

@@ -89,10 +89,6 @@ function Fw() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const images = [1, 2, 3, 4, 5].map(
-    (num) =>
-      `https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/fw/fw${num}.jpg`
-  );
 
   return (
     <>
@@ -130,10 +126,11 @@ function Fw() {
         </CenterContent>
       <Container>
         
-        {images.map((url, idx) => (
-          <Image key={idx} src={url} alt={`fw${idx + 1}`} />
-        ))}
-
+        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/fw/fw1.jpg" />
+        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/fw/fw2.png" />
+        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/fw/fw3.jpg" />
+        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/fw/fw4.jpg" />
+        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/fw/fw5.jpg" />
         <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/fw/fw6.JPG" />
 
         <RightWrap>

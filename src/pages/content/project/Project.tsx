@@ -26,12 +26,12 @@ function Project({ selectedCategory }: { selectedCategory: string }) {
 
   return (
     <ProjectWrapper>
-    <div className="w-full flex flex-wrap justify-between gap-10">
-      {filteredProjects.map((item, index) => (
-        <ProjectCard key={index} {...item} />
-      ))}
-    </div>
-    </ProjectWrapper>
+  <div className="w-full flex flex-wrap justify-center gap-10">
+    {filteredProjects.map((item, index) => (
+      <ProjectCard key={index} {...item} />
+    ))}
+  </div>
+</ProjectWrapper>
   );
 }
 

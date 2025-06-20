@@ -7,28 +7,29 @@ const Container = tw.section`
   w-full
   min-h-screen
   bg-white
-  pt-24
   flex
   flex-col
   items-center
   p-10
 `;
 
-const Navbar = tw.nav`
-  fixed
-  top-0
-  left-0
-  w-full
-  h-16
+const TitleWrap = tw.div`
   flex
+  flex-col
   items-center
-  justify-center
-  bg-white
-  border-b
-  border-gray-300
+`;
+
+const Title = tw.h1`
+  text-3xl
   font-bold
-  text-xl
-  z-20
+  text-black
+  mb-0
+`;
+
+const Subtitle = tw.p`
+  text-sm
+  text-gray-500
+  mt-0
 `;
 
 const ContentWrap = tw.div`
@@ -37,6 +38,7 @@ const ContentWrap = tw.div`
   items-start
   gap-10
   px-20
+  mt-10
   max-md:flex-col
   max-md:gap-6
   max-md:items-center
@@ -44,8 +46,8 @@ const ContentWrap = tw.div`
 `;
 
 const ImgLarge = tw.img`
-  w-[400px]
-  h-[400px]
+  w-[600px]
+  h-[600px]
   object-contain
   rounded
   shadow-lg
@@ -55,7 +57,7 @@ const InfoWrap = tw.div`
   flex
   flex-col
   justify-between
-  h-[400px]
+  h-[600px]
   max-w-[300px]
 `;
 
@@ -73,14 +75,14 @@ const Price = tw.p`
 
 const AdditionalWrap = tw.div`
   flex
-  flex-wrap
-  gap-4
-  mt-12
-  justify-center
+  flex-col
+  items-center
+  gap-6
+  mt-16
 `;
 
 const AdditionalImg = tw.img`
-  w-[180px]
+  w-[450px]
   h-auto
   object-cover
   rounded
@@ -107,6 +109,7 @@ export default function ProjectDetail() {
     name: string;
     price: string;
     imgurl: string;
+    category?: string;
     additionalPhoto?: string[];
   } | null>(null);
 
@@ -125,7 +128,10 @@ export default function ProjectDetail() {
 
   return (
     <Container>
-      <Navbar>ohmé</Navbar>
+      <TitleWrap>
+        <Title>ohmé</Title>
+        <Subtitle>{product.category}</Subtitle>
+      </TitleWrap>
 
       <ContentWrap>
         <ImgLarge src={product.imgurl} alt={product.name} />
@@ -136,12 +142,11 @@ export default function ProjectDetail() {
             <Price>{product.price}</Price>
           </div>
           <CartButton onClick={handleAddToCart}>
-  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.586A1 1 0 007 17h10a1 1 0 00.894-1.447L17 13M7 13V6h13" />
-  </svg>
-  Add to Cart
-</CartButton>
-
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.586A1 1 0 007 17h10a1 1 0 00.894-1.447L17 13M7 13V6h13" />
+            </svg>
+            Add to Cart
+          </CartButton>
         </InfoWrap>
       </ContentWrap>
 

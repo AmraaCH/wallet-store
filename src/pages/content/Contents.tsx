@@ -63,6 +63,7 @@ function Contents() {
       <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/bk1.jpg"/>
       <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/bk2.jpg"/>
 
+      
       <Title>Products</Title>
 
       <MenuList>
