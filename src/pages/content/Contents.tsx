@@ -47,12 +47,22 @@ const ContentWrapper = tw.div`
   gap-20
   pb-20
 `;
+const Image = tw.img`
+  w-full
+  max-w-[600px]
+  h-auto
+  object-cover
+  mb-10
+`;
 
 function Contents() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   return (
     <Container>
+      <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/bk1.jpg"/>
+      <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/bk2.jpg"/>
+
       <Title>Products</Title>
 
       <MenuList>

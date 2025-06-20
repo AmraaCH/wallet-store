@@ -126,14 +126,13 @@ function Fw() {
       <Container>
         <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s1.jpg"/>
         <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s2.jpg"/>
-        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s3.JPG"/>
-        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s4.JPG"/>
-        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s5.JPG"/>
-        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s6.JPG"/>
-        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s7.JPG"/>
-        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s8.JPG"/>
-        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s9.JPG"/>
-        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s10.JPG" />
+        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s3.png"/>
+        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s4.png"/>
+        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s5.jpg"/>
+        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s6.jpg"/>
+        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s7.png"/>
+        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s8.png"/>
+        <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/s/s9.png"/>
         <RightWrap>
           <FooterMenu />
         </RightWrap>
