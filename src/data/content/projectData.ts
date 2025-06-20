@@ -119,7 +119,8 @@ export const projectData = [
     category: '25F/W',
     additionalPhoto: 
     [
-      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/wallets/allwallet.png',
+            'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/allwallet.png',
+
     ]
   },
   {
@@ -130,7 +131,8 @@ export const projectData = [
     category: '25F/W',
     additionalPhoto: 
     [
-      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/wallets/allwallet.png',
+            'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/allwallet.png',
+
     ]
   },
   {
@@ -141,7 +143,7 @@ export const projectData = [
     category: '25F/W',
     additionalPhoto: 
     [
-      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/wallets/allwallet.png',
+      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/allwallet.png',
     ]
   },
   {
@@ -152,7 +154,8 @@ export const projectData = [
     category: '25F/W' ,
     additionalPhoto: 
     [
-      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/wallets/allwallet.png',
+            'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/allwallet.png',
+
     ]
   },
   {
@@ -163,7 +166,8 @@ export const projectData = [
     category: '25F/W' ,
     additionalPhoto: 
     [
-      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/wallets/allwallet.png',
+            'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/allwallet.png',
+
     ]
   },
   {
@@ -174,7 +178,8 @@ export const projectData = [
     category: '25F/W' ,
     additionalPhoto: 
     [
-      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/wallets/allwallet.png',
+            'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/allwallet.png',
+
     ]
   },
   {
@@ -185,7 +190,8 @@ export const projectData = [
     category: '25F/W' ,
     additionalPhoto: 
     [
-      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/wallets/allwallet.png',
+            'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/allwallet.png',
+
     ]
   },
   {
@@ -196,7 +202,8 @@ export const projectData = [
     category: '25F/W' ,
     additionalPhoto: 
     [
-      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/wallets/allwallet.png',
+            'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/allwallet.png',
+
     ]
   },
   {
@@ -207,7 +214,8 @@ export const projectData = [
     category: '25F/W',
     additionalPhoto: 
     [
-      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/wallets/allwallet.png',
+            'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/allwallet.png',
+
     ]
   },
   {
@@ -218,7 +226,8 @@ export const projectData = [
     category: '25F/W' ,
     additionalPhoto: 
     [
-      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/wallets/allwallet.png',
+            'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/allwallet.png',
+
     ]
   },
   {
@@ -229,7 +238,8 @@ export const projectData = [
     category: '25F/W',
     additionalPhoto: 
     [
-      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/wallets/allwallet.png',
+            'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/allwallet.png',
+
     ]
   },
   {
@@ -240,7 +250,8 @@ export const projectData = [
     category: '25F/W',
     additionalPhoto: 
     [
-      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/wallets/allwallet.png',
+            'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/wallets/allwallet.png',
+
     ]
   },
 
