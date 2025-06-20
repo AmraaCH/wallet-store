@@ -1,8 +1,7 @@
 import tw from 'tailwind-styled-components';
 import { motion } from 'framer-motion';
-import { ANI_TRANSITION, OPACITY_0, OPACITY_1, Y_0, Y_P10 } from '../../utils/constant/constant';
-import { BoldTxt } from '../atoms/text/BoldText';
-import { AnimationP, BgText, MainSubText, MainTitle } from '../atoms/text/Text.styled';
+import { ANI_TRANSITION, OPACITY_0, OPACITY_1, Y_0 } from '../../utils/constant/constant';
+import { AnimationP, BgText, MainTitle } from '../atoms/text/Text.styled';
 
 export const TxtBox = tw.section`
   absolute
