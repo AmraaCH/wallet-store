@@ -18,14 +18,30 @@ export const projectData = [
     name: project1.name,
     price: project1.price,
     imgurl: project1.imgurl,
-    category: '25F/W'
+    category: '조혜원',
+    additionalPhoto: 
+    [
+      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h1.jpg',
+      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h7.JPG',
+      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h8.JPG',
+      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h9.JPG',
+      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h10.JPG'
+    ]
   },
   {
     id: project2.id,
     name: project2.name,
     price: project2.price,
     imgurl: project2.imgurl,
-    category: '25F/W'
+    category: '조혜원',
+    additionalPhoto: 
+    [
+      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h2.jpg',
+      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h3.JPG',
+      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h4.JPG',
+      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h5.JPG',
+      'https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h16.JPG'
+    ]
   },
   {
     id: project3.id,
@@ -60,21 +76,21 @@ export const projectData = [
     name: project7.name,
     price: project7.price,
     imgurl: project7.imgurl,
-    category: '조혜원'
+    category: '25fw'
   },
   {
     id: project8.id,
     name: project8.name,
     price: project8.price,
     imgurl: project8.imgurl,
-    category: '조혜원'
+    category: '25fw'
   },
   {
     id: project9.id,
     name: project9.name,
     price: project9.price,
     imgurl: project9.imgurl,
-    category: '조혜원'
+    category: '25fw'
   },
   {
     id: project10.id,

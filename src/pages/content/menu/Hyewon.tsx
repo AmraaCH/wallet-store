@@ -134,6 +134,8 @@ function Fw() {
       <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h7.JPG"/>
       <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h8.JPG"/>
       <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h9.JPG"/>
+      <Image src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/h/h10.JPG"/>
+
 
 
         <RightWrap>
