@@ -38,7 +38,7 @@ export default {
         }
       },
       backgroundImage: {
-        'main': 'url("https://github.com/jieun419/jieun_portfolio/blob/main/src/assets/images/front_bg.jpg?raw=true")'
+        'main': 'url("https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/front_bg.jpg")'
       },
     },
   },

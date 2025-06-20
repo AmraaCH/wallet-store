@@ -4,9 +4,9 @@ import Contents from './pages/content/Contents';
 import QuickBtns from './components/quickBtns/QuickBtns';
 import ProjectDetail from './pages/detail/ProjectDetail';
 import Fw from './pages/content/menu/25fw';
-import Sena from './pages/content/menu/sena';
+import Sena from './pages/content/menu/Sena';
 import Hyewon from './pages/content/menu/Hyewon';
-import Jooha from './pages/content/menu/jooha';
+import Jooha from './pages/content/menu/Jooha';
 
 export default function App() {
   return (
