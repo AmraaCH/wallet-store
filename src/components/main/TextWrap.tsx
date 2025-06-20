@@ -52,7 +52,7 @@ function TextWrap() {
         </MainTitle>
       </IntroAnimationDiv>
 
-      <MainSubText
+      {/* <MainSubText
         initial={{ ...OPACITY_0, ...Y_0 }}
         animate={{ ...OPACITY_1, ...Y_P10 }}
         transition={{ ...ANI_TRANSITION, delay: 3 }}
@@ -65,7 +65,7 @@ function TextWrap() {
         transition={{ ...ANI_TRANSITION, delay: 3.5 }}
       >
         To bring your <BoldTxt>imagination</BoldTxt> into <BoldTxt>life</BoldTxt>
-      </MainSubText>
+      </MainSubText> */}
     </TxtBox >
   )
 }

@@ -38,7 +38,7 @@ export default {
         }
       },
       backgroundImage: {
-        'main': 'url("https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/bk.jpg")'
+        'main': 'url("https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/bk1.jpg")'
       },
     },
   },
