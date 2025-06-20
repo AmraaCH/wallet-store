@@ -83,18 +83,21 @@ function Main() {
           transition={{ ...ANI_TRANSITION, delay: 3 }}
         />
 
-        <img
-        src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/bk2.jpg"
-       alt="Context Image"
-        className="w-[400px] mx-auto my-6 rounded shadow-md"
-        />
+
 
         <ScrollArrow delay={3.9} />
         <TextWrap />
 
         <InfoWrap delay={3} />
+        
       </MainComponent>
+              <img
+        src="https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/bk2.jpg"
+       alt="Context Image"
+        className="w-[400px] mx-auto my-6 rounded shadow-md"
+        />
     </motion.div>
+    
   );
 }
 

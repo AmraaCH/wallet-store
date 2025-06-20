@@ -26,13 +26,31 @@ export const MainComponent = tw.main<IsMobile>`
 
 export const MainBg = tw(motion.div)`
   absolute
-  bg-cover
-  bg-main
   top-0
   bottom-0
   left-0
   right-0
+  bg-main         // ✅ Tailwind config에서 등록한 배경 이미지 사용
+  bg-no-repeat
+  bg-contain      // ✅ 이미지 잘리지 않도록
+  bg-center
+  bg-white       // ✅ 여백이 생길 수 있으니 배경색 추가
 `;
+
+<MainBg
+  style={{
+    backgroundImage: `url("https://raw.githubusercontent.com/AmraaCH/wallet-store/main/src/assets/images/bk1.jpg")`,
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundColor: '#ffffff'
+  }}
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1.2 }}
+/>
+
+
 
 
 export const Img = tw(motion.img) <IsMobile>`
